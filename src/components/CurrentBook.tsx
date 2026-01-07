@@ -233,7 +233,7 @@ export function CurrentBook() {
             submitting={submitting}
             initialTitle={currentBook?.book || ""}
             initialAuthor={currentBook?.author || ""}
-            isEdit={editingCurrent && hasCurrentBook}
+            isEdit={editingCurrent && !!hasCurrentBook}
           />
         </div>
       )}
@@ -260,7 +260,7 @@ export function CurrentBook() {
             submitting={submitting}
             initialTitle={nextBook?.book || ""}
             initialAuthor={nextBook?.author || ""}
-            isEdit={editingNext && hasNextBook}
+            isEdit={editingNext && !!hasNextBook}
           />
         </div>
       )}
