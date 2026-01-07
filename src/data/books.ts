@@ -8,7 +8,7 @@ export interface BookEntry {
   link?: string | null;
 }
 
-export const members = ["Tommy", "Thalin", "Brett", "Sampson", "Drew", "Parker", "Ian", "Ward", "Nick", "Sechler"];
+export const members = ["Tommy", "Brett", "Sampson", "Drew", "Parker", "Ian", "Ward", "Nick", "Sechler"];
 
 export const monthOrder = [
   "January", "February", "March", "April", "May", "June",
