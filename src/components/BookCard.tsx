@@ -18,7 +18,9 @@ export function BookCard({ book, showDate = true, featured = false }: BookCardPr
           : "border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900"
       }`}
     >
-      <BookCover title={book.book} author={book.author} size="md" className="flex-shrink-0" />
+      {book.book && book.author && (
+        <BookCover title={book.book} author={book.author} size="md" className="flex-shrink-0" />
+      )}
       <div className="min-w-0 flex-1">
         {showDate && (
           <p className="text-sm font-medium text-zinc-500 dark:text-zinc-400">
